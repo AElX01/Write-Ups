@@ -146,7 +146,7 @@ Learning resources I use (take into account I have a VIP student account on HTB)
 - Random machine (HTB machine)
 - Random machine (offsec machine)
 
-# Week 17 
+# Week 17 []
 
 - Attacking Common Applications (HTB Module)
 - Linux Privilege Escalation (HTB Module)
