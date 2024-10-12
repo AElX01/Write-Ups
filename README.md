@@ -16,6 +16,15 @@ Learning resources I use (take into account I have a VIP student account on HTB)
 - If you are an autodidact person, notes are not going to make you understand, make write ups and labs to explain yourself the concepts!
 - Practice some stuff with real websites, what about HackerOne?
 
+# Prior
+
+Before taking any of the below modules, it is preferred that you have Linux, Windows, Networking and Web Development concepts fresh, so I recommend doing a couple of stuff before reaching the first week:
+
+- Bandit Levels (Overthewire Linux Training)
+- Windows fundamentals and AD HTB modules (I also recommend John Hammond's AD playlist)
+- The Odin Project HTML, JS and SQL modules (Web Develpment Training)
+- For Networking, you can take the Introduction to Networking HTB module, but the deepest your networking background is, the better.
+
 # Week 1 []
 
 - SQL injection (portswigger)
