@@ -14,6 +14,7 @@ Learning resources I use (take into account I have a VIP student account on HTB)
 - Anything can be an attacker machine if you know how to use it, even Windows (I recommend WSL), so, it doesn't matter what you use as long as you study.
 - Take **MEANINGFUL** notes, and if you are planning to get a certification, take even more notes.
 - If you are an autodidact person, notes are not going to make you understand, make write ups and labs to explain yourself the concepts!
+- Practice some stuff with real websites, what about HackerOne?
 
 # Week 1 []
 
