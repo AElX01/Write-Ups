@@ -175,3 +175,21 @@ Before taking any of the below modules, it is preferred that you have Linux, Win
 - Attacking Enterprise Networks
 
 **At this point, you should be ready to take the CPTS HTB certification, obviously, modules are not enough, if you hacked tons of machines and applied what you learned on all modules, you will be even more than ready.**
+
+# Recommended Platforms to Practice 
+
+- **HackTheBox**
+
+Probably the best platform to practice, realistic machines and very high quality (some of them are more like a ctf machine, or some are impossibly hard, but the majority of them are very good and realistic machines). Usually HTB machines are the hardest of the below options.
+
+- **Proving Grounds**
+
+High quality machines selected from VulnHub and very close to the OSCP certification.
+
+- **VulnHub**
+
+VunHub contains some nice machines, but they are not as good as the above options, still, you can find very high quality material comparable to some certifications.
+
+- **TryHackMe**
+
+I have found very few nice machines, but they are not that awesome, very bad quality and so close to weird CTF machines with very weird solutions.
