@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import requests
 import json
-import time
 import string
 from os import system
 
