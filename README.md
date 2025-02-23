@@ -1,1 +1,8 @@
-various write-ups from different categories including revering, cryprography and network exploitation!
+# 0xNcat's write-ups!
+
+You can find various write-ups about:
+- web exploitation
+- reverse engineering
+- cryptography
+
+enjoy ^w^
