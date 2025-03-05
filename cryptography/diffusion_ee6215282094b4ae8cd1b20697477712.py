@@ -3,16 +3,11 @@ def shift_rows(s):
     s[0][2], s[1][2], s[2][2], s[3][2] = s[2][2], s[3][2], s[0][2], s[1][2]
     s[0][3], s[1][3], s[2][3], s[3][3] = s[3][3], s[0][3], s[1][3], s[2][3]
 
-    return s
 
 def inv_shift_rows(s):
-    s[1][1], s[2][1], s[3][1], s[0][1] = s[0][1], s[1][1], s[2][1], s[3][1]
-    s[2][2], s[3][2], s[0][2], s[1][2] = s[0][2], s[1][2], s[2][2], s[3][2]
-    s[3][3], s[0][3], s[1][3], s[2][3] = s[0][3], s[1][3], s[2][3], s[3][3]
-
-    return s
-
-
+    s[1][1], s[2][1], s[3][1], s[0][1] = s[0][1], s[1][1], s[2][1], s[3][1] 
+    s[2][2], s[3][2], s[0][2], s[1][2] = s[0][2], s[1][2], s[2][2], s[3][2] 
+    s[3][3], s[0][3], s[1][3], s[2][3] = s[0][3], s[1][3], s[2][3], s[3][3] 
 
 
 # learned from http://cs.ucsb.edu/~koc/cs178/projects/JT/aes.c
@@ -46,8 +41,14 @@ def inv_mix_columns(s):
 
     mix_columns(s)
 
-    return s
+def matrix2bytes(matrix):
+    plaintext = []
 
+    for i in range(4):
+        for j in range(4):
+            plaintext.append(chr(matrix[i][j]))
+
+    return ''.join(plaintext)
 
 state = [
     [108, 106, 71, 86],
@@ -56,8 +57,6 @@ state = [
     [94, 79, 8, 54],
 ]
 
-bytes = inv_shift_rows(inv_mix_columns(state))
-
-for i in range(4):
-    for j in range(4):
-        print(chr(bytes[i][j]), end='')
+inv_mix_columns(state)
+inv_shift_rows(state)
+print(matrix2bytes(state))

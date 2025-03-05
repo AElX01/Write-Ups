@@ -3,14 +3,13 @@ def bytes2matrix(text):
     return [list(text[i:i+4]) for i in range(0, len(text), 4)]
 
 def matrix2bytes(matrix):
-    # Converts a 4x4 matrix into a 16-byte array.  """
-    plain_text_message = []
-    
+    plaintext = []
+
     for i in range(4):
         for j in range(4):
-            plain_text_message.append(chr(matrix[i][j]))
+            plaintext.append(chr(matrix[i][j]))
 
-    return plain_text_message
+    return ''.join(plaintext)
 
 
 matrix = [
@@ -20,4 +19,4 @@ matrix = [
     [114, 105, 120, 125],
 ]
 
-print(bytes2matrix("hhhhfasdfasdfasdfasdf"))
+print(matrix2bytes(matrix))

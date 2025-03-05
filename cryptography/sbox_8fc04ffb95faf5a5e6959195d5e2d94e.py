@@ -1,4 +1,3 @@
-
 s_box = (
     0x63, 0x7C, 0x77, 0x7B, 0xF2, 0x6B, 0x6F, 0xC5, 0x30, 0x01, 0x67, 0x2B, 0xFE, 0xD7, 0xAB, 0x76,
     0xCA, 0x82, 0xC9, 0x7D, 0xFA, 0x59, 0x47, 0xF0, 0xAD, 0xD4, 0xA2, 0xAF, 0x9C, 0xA4, 0x72, 0xC0,
@@ -46,10 +45,20 @@ state = [
 
 
 def sub_bytes(s, sbox=s_box):
-    return [ [sbox[a] for a in x] for x in s]
+    row = 0
+    column = 0
+    plaintext = []
 
-message = sub_bytes(state, sbox=inv_s_box)
+    for i in range(4):
+        for j in range(4):
+            row = int(hex(s[i][j])[2], 16)
+            column = int(hex(s[i][j])[3], 16)
 
-for i in range(4):
-    for j in range(4):
-        print(chr(message[i][j]))
+            plaintext.append(chr(sbox[(row * 16) + column]))
+
+    return ''.join(plaintext)
+
+
+
+print(sub_bytes(state, sbox=inv_s_box))
+
