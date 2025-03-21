@@ -3,7 +3,7 @@
 
 |Machine|Platform|Difficulty
 |-|-|-
-|Mr Robot CTF|TryHackMe|Medium (Not really)
+|Mr Robot CTF|TryHackMe|Medium
 
 **Challenge Description:** Can you root this Mr. Robot styled machine? This is a virtual machine meant for beginners/intermediate users. There are 3 hidden keys located on the machine, can you find them?
 
@@ -51,7 +51,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.78 seconds
 
 The website exposed on port 80 looks like this, which appears to be an interactive terminal to navigate trough different functionalities:
 
-![](image.png)
+![](../assets/image.png)
 
 Wappalizer detected the website is a WordPress blog, interesting places like the **wp-admin** or **robots.txt** sections might be useful to enumerate, after playing around with the site and reviewing its source code, I tried access the **robots.txt** file and discovered the following:
 
@@ -216,8 +216,3 @@ nmap> ! cat /root/key-3-of-3.txt
 ```
 
 With all of that done, the machine is compromised!
-
-
-# Reflection
-
-This machine is more like a ctf machine than anything else, it's a good one just for fun (and it is supposed to be comparable with EJPT machines). I wouldn't rate this one as a **Medium** machine, I'm writing this write up two years after I did this machine for the first time and still, I didn't need to read the write up like the first time. Even though I would rate this as a **very easy** machine, it's a good one to practice basic enumeration skills.
