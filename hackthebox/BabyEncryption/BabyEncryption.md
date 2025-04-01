@@ -4,11 +4,11 @@
 |-|-|-
 |HackTheBox|Crypto|Very Easy
 
-### DESCRIPTION
+## DESCRIPTION
 
 **You are after an organised crime group which is responsible for the illegal weapon market in your country. As a secret agent, you have infiltrated the group enough to be included in meetings with clients. During the last negotiation, you found one of the confidential messages for the customer. It contains crucial information about the delivery. Do you think you can decrypt it?**
 
-### SOLUTION
+## SOLUTION
 
 The challenge is not as fancy as is sounds in the description, as it only requires some modular arithmetic knowledge.  
 Once files have been downloaded, we get the secret message **msg.enc** and the software that has been used to generate it:
