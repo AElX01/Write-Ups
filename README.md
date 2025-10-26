@@ -9,4 +9,4 @@ You can find various write-ups about:
 - reverse engineering
 
 > [!IMPORTANT]
-> All my further walkthroughs will be uploaded to my [blog](https://aelx01.github.io/) now. No write-ups will be uploaded here anymore ;)
+> All my further walkthroughs will be uploaded to my [blog](https://medium.com/@s0mec4t) now. No write-ups will be uploaded here anymore ;)
